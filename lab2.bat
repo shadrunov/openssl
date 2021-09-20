@@ -1,5 +1,5 @@
 cd "%~dp0"
-set OPENSSL_CONF=C:\Users\shadr\OpenSSL\bin\openssl.cnf   
+set OPENSSL_CONF=D:\OpenSSL\openssl.cnf
 
 openssl req -config openssl.cnf -newkey rsa:4096 -x509 -days 365 -passout pass:"qwerty" -extensions v3_ca -multivalue-rdn -subj /C=RU/L=Moscow/O=HSE/OU=MIEM/CN="HSE MIEM Root CA" -keyout rootCA.key -out rootCA.crt
 
