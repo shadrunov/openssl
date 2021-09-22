@@ -1,5 +1,3 @@
-cd "%~dp0"
-
 openssl x509 -in bib202.crt -out bib202.pem -outform PEM
 
 type bib202.pem >> chain.pem
